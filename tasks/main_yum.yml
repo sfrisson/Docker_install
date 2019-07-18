@@ -1,0 +1,14 @@
+---
+#fisrts block info then task.
+- name: docker install part1
+  hosts: redhat
+
+#task 
+  tasks:
+  - name: install Docker Pre REQ
+    yum:
+      name: 
+        - yum-utils
+        - device-mapper-persistent-data
+        - lvm2
+      state: present 

@@ -1,0 +1,25 @@
+
+---
+#installing Docker, changee Hosts ip or group to your needs
+- hosts: i7
+  become: true
+  tasks:
+    - name: installing docker repo
+      yum_repository:
+        name: docker_ce-repo
+        description: repo Docker-ce
+        baseurl: https://download.docker.com/linux/centos/docker-ce.repo
+        enabled: yes
+        gpgcheck: no
+    
+#installing docker latest    
+    - name: docker newest installation
+      yum: 
+        name: docker
+        state: latest 
+         
+    
+
+
+
+
