@@ -1,5 +1,5 @@
 ---
-#fisrts block info then task.
+#installation of docker prerequisite for REDHAT base sys ( fedora,centos,redhat..)
 - name: docker install part1
   hosts: redhat
 

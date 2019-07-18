@@ -1,5 +1,5 @@
 ---
-#fisrts block info then task.
+#nstallation of prerequisite for Debian type machines 
 - name: docker install part1-DEBIAN
   hosts: debian 
   become: true
