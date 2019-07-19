@@ -1,2 +1,3 @@
 # Docker_install
-automatisation of Docker install for a K8 server
+automatisation with ansible of Docker install
+ 
