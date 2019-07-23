@@ -1,7 +1,7 @@
 ---
 #installation of docker prerequisite for REDHAT base sys ( fedora,centos,redhat..)
 - name: docker install part1
-  hosts: k8
+  hosts: redhat
 
 #task
   tasks:

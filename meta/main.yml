@@ -1,7 +1,13 @@
 galaxy_info:
+<<<<<<< HEAD
   author: your name
   description: your description
   company: your company (optional)
+=======
+  author: Frisson S
+  description: install the node explorer of Prometheus
+  company: none
+>>>>>>> 211f5f87f961daeaff512ed9588512f20a02d675
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -36,7 +42,11 @@ galaxy_info:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
   # platforms:
+<<<<<<< HEAD
   # - name: Fedora
+=======
+   - name: Fedora29 ,Centos7
+>>>>>>> 211f5f87f961daeaff512ed9588512f20a02d675
   #   versions:
   #   - all
   #   - 25
@@ -57,4 +67,8 @@ galaxy_info:
 
 dependencies: []
   # List your role dependencies here, one per line. Be sure to remove the '[]' above,
+<<<<<<< HEAD
   # if you add dependencies to this list.
+=======
+  # if you add dependencies to this list.
+>>>>>>> 211f5f87f961daeaff512ed9588512f20a02d675
