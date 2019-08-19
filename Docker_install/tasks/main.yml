@@ -1,3 +1,5 @@
 ---
-  - import_tasks: docker_pre_req_yum.yml
-  - import_tasks: docker_install_yum.yml
+  - name: installing Docker pre REQ
+    import_tasks: docker_pre_req_yum.yml
+  - name: installing docker_ce
+    import_tasks: docker_install_yum.yml
