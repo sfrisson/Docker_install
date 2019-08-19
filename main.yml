@@ -1,5 +1,0 @@
----
-  - name: installing K8 on master and nodes
-    import_tasks: k8s_install
-  - name: installing docker_ce
-    import_tasks: Docker_install

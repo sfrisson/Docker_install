@@ -1,0 +1,15 @@
+---
+#nstallation of prerequisite for Debian type machines this doe not apply to my setup just yet
+- name: starting docker install DEBIAN based prerequisite
+  hosts: k8_cluster
+  become: true
+
+#task
+  tasks:
+  - name: install Docker Pre REQ
+    apt:
+      name:
+        - yum-utils
+        - device-mapper-persistent-data
+        - lvm2
+      state: present
