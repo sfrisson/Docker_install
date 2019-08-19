@@ -1,7 +1,9 @@
 
 ---
+#fisrt we will install the repo for docker_ce
+# 2) will install docker
 #installing Docker, changee Hosts ip or group to your needs
-- hosts: k8
+- hosts: k8_cluster
   become: true
   tasks:
     - name: installing docker repo

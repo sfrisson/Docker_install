@@ -1,14 +1,14 @@
 
 ---
 #installing Docker, changee Hosts ip or group to your needs
-- hosts: k8
+- hosts: k8_cluster #k8_cluster is a group in the INI file with the all the nodes
   become: true
   tasks:
     - name: installing docker repo
       yum_repository:
         name: docker_ce-repo
         description: repo Docker-ce
-        baseurl: https://download.docker.com/linux/centos/docker-ce.repo
+        baseurl: https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable
         enabled: yes
         gpgcheck: no
 

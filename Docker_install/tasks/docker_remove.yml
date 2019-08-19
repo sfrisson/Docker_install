@@ -1,6 +1,6 @@
 
 ---
-#installing Docker, changee Hosts ip or group to your needs
+#removal of docker and repo on CENTOS
 - hosts: i7
   become: true
   tasks:
@@ -11,15 +11,9 @@
         baseurl: https://download.docker.com/linux/centos/docker-ce.repo
         enabled: no
         gpgcheck: no
-    
-#installing docker latest    
+
+#installing docker latest
     - name: docker newest installation
-      yum: 
+      yum:
         name: docker
         state: absent
-         
-    
-
-
-
-
